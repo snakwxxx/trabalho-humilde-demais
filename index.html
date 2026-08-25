@@ -2,13 +2,43 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>⚡ Kombat Pixel ⚡</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-wrapper">
         <canvas id="gameCanvas" width="800" height="450"></canvas>
+        
+        <!-- Controles Mobile -->
+        <div class="mobile-controls">
+            <!-- Player 1 (Esquerda) -->
+            <div class="controls-left">
+                <div class="joystick-container" id="joystick1">
+                    <div class="joystick-base">
+                        <div class="joystick-thumb" id="thumb1"></div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-mobile attack-btn" id="attack1">⚔️</button>
+                    <button class="btn-mobile block-btn" id="block1">🛡️</button>
+                </div>
+            </div>
+
+            <!-- Player 2 (Direita) -->
+            <div class="controls-right">
+                <div class="action-buttons">
+                    <button class="btn-mobile attack-btn" id="attack2">⚔️</button>
+                    <button class="btn-mobile block-btn" id="block2">🛡️</button>
+                </div>
+                <div class="joystick-container" id="joystick2">
+                    <div class="joystick-base">
+                        <div class="joystick-thumb" id="thumb2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="menu-panel">
             <span class="title">⚡ KOMBAT</span>
             <div>
